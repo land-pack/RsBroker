@@ -33,7 +33,6 @@ class RsBroker(tornado.web.Application):
             server = HTTPServer(self)
             socket = bind_unix_socket(self.options.unix_socket)
             server.add_socket(socket)
-        # ioloop.PeriodicCallback(RoomManager.loop_check_ttl, 1000).start()
         self.started = True
         self.io_loop.start()
 

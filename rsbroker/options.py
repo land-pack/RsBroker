@@ -5,10 +5,10 @@ from tornado.options import options
 
 DEFAULT_CONFIG_FILE = 'flowerconfig.py'
 
-define("RPORT", default=2332,
+define("RPORT", default=23321,
        help="[Room Server] run on the given port", type=int)
 
-define("PORT", default=3223,
+define("PORT", default=23322,
        help="[Api Server] run on the given port", type=int)
 
 define("address", default='',
